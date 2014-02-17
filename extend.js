@@ -1,5 +1,6 @@
-function extend (target) {
-	var deep = false,
+function extend () {
+	var target = arguments[0],
+		deep = false,
 		objs = [].slice.call(arguments, 1),
 		obj,
 		asArray = '[object Array]',
